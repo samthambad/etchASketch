@@ -36,14 +36,14 @@ for (let n=1; n<(((dimen.value)**2) +1 ); n++){
     console.log(`${n}`)
 }
 
-
-
-
-
 board.addEventListener('mouseover', e => {
-    e.target.style.backgroundColor = 'black'
+    e.target.style.backgroundColor = 'black'//finds the div where event occurs and colors it.
     console.log(e.target) 
 });
+
+
+
+
 
 function deleteChild() {
     var board = document.querySelector(".flex-container .content .board");//var gas global scope while let is limited to the block where it is declared
@@ -59,19 +59,3 @@ function deleteChild() {
 
 
 
-function clearButton() {
-        //first delete the initial grid
-        deleteChild()
-        console.log(document.querySelector(".flex-container .content .input"));
-        document.querySelector(".flex-container .content .input").value = parameter;//parameter's value is given to input which is in html
-        let dimen = document.querySelector('.flex-container .content .input')
-        console.log("The dimension value is"+dimen.value)
-        board.style.gridTemplateColumns = `repeat(${dimen.value}, 1fr)`
-        //create square
-        for (let n=1; n<(((dimen.value)**2) +1 ); n++){
-            let square = document.createElement('div')
-            square.classList.add(`eachSquare`)
-            board.appendChild(square)
-            console.log(`${n}`)
-    }
-}
