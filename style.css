@@ -1,5 +1,59 @@
+h1{
+    color: aliceblue;
+}
+
 .board {
     width: 500px;
     height: 500px;
     display: grid;
+    box-shadow: 5px 5px 5px 5px  rgb(176, 161, 0);
+    background-color: #ffffe6;
+    margin-bottom: 50px;
+
+  
+
+}
+
+.buttons {
+    padding-top: 20px;
+}
+
+button {
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+span {
+    font-weight: 700;
+    color:aliceblue
+}
+
+input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+    
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://66.media.tumblr.com/88fa9b6ae4803d8aa6ae1242e6a8123c/tumblr_oe87itLkNZ1r1io1co1_1280.gif);
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
