@@ -2,4 +2,4 @@
 from TOP
 
 
-live website https://ivysam-cmyk.github.io/etchASketch/
+live website https://samthambad.github.io/etchASketch/
